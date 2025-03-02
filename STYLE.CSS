@@ -1,0 +1,307 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Thasadith:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Thasadith:ital,wght@0,400;0,700;1,700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(bg1.png) ;
+    object-fit: contain;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 300px) {
+    body {
+      background-image: url(bgms2.jpg);
+      object-fit: contain;
+    }
+}
+nav {
+    display: flex;
+    position: relative;
+    /* background-color: rgb(199, 208, 240);
+    background: linear-gradient(135deg, transparent #e5c2f1, #5A0A7A); */
+    color: black;
+    height: 10vh;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+  
+    /* text-transform: uppercase; */
+}
+
+nav ul {
+    font-size: 45px;
+    
+    /* font-family: "Ubuntu", serif;
+    font-weight: 700;
+    font-style: normal; */
+    position: absolute;
+    justify-self: center;
+    list-style-type: none;
+    opacity: 1;
+    /* font-family: "Thasadith", serif;
+    font-weight: 700;
+    font-style: normal; */
+    font-family: "Darumadrop One", serif;
+    font-weight: 400;
+    font-style: large;
+    /* height: 100%; */
+}
+
+.gameContainer{
+    display: flex;
+    flex-wrap: wrap;
+    /* border: solid 4px black; */
+    /* border-radius: 14px; */
+    margin-top: 4vh;
+    /* background-color: yellowgreen ; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50vh;
+    /* gap: 23px; */
+}
+.mute {
+
+    cursor: pointer;
+    /* border: 2px solid; */
+    position: absolute;
+    /* right: 12%; */
+    right: 3vw;
+}
+
+.mute img{
+    height: 34px;
+}
+
+.container{
+    display: grid;
+    /* border: 2px  solid ; */
+    height: 45vh;
+    width: 45vh;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    :hover{
+      background-color: rgb(193, 193, 252);
+}
+.box{
+    cursor: pointer;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5vw;
+    font-family: "Thasadith", serif;
+    
+    font-style: normal;
+    
+}
+.bt{
+    border-top: 0;
+}
+.bb{
+    border-bottom   : 0;
+}
+.br{
+    border-right: 0;
+}
+.bl{
+    border-left: 0;
+}
+}
+.img
+{
+    width: 0;
+    height: 160px;
+   
+ transition: width 0.25s ;
+
+}
+.img1
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.gameInfo{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0;
+    font-family: "Thasadith", serif;
+    font-weight: 900;
+    font-style: normal;
+    height: 100%;
+    top: 4vh;
+}
+.gameInfo h1{
+    font-size: xx-large;
+    font-weight: 1200;
+
+    text-align: center;
+    margin-bottom: 2vh;
+}
+.info1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2vh;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.reset-button {
+    /* margin-left: 5vw; */
+    justify-self: center;
+    background: linear-gradient(135deg, #8A2BE2, #7A1B9D); /* Gradient from BlueViolet to a darker shade */
+    color: white; /* Text color */
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Padding for the button */
+    font-size: 16px; /* Font size */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+.reset-button:hover {
+    background: linear-gradient(135deg, #7A1B9D, #6A0B8A); /* Darker gradient on hover */
+}
+
+.reset-button:active {
+    background: linear-gradient(135deg, #6A0B8A, #5A0A7A); /* Even darker gradient when active */
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4vh;
+}
+
+
+.line{
+    /* display: none; */
+    position: absolute;
+    height: 0vh;
+    
+    background-color: rgb(185, 107, 107);
+    border-radius: 10px;
+    width: 10px;
+    transition: height 0.1s ease-in-out;
+    
+}
+
+.count{
+
+    display: flex;
+    position: relative;
+    /* height: 35vh;
+    width: 100vw; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* justify-content: space-evenly; */
+}
+.table{
+    /* justify-self: center; */
+    /* bottom:-40%;
+    right: 10%; */
+    /* position: absolute ; */
+    display: grid ;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, 1fr); 
+    /* border: 2px solid; */
+    border-radius: 10px;
+    height: 20vh;
+    width: 8vw;
+    /* box-shadow: 5px 5px red ; */
+    margin-right: 30%;
+    margin-top: 5%;
+    /* box-shadow: offsetX offsetY blurRadius spreadRadius color; */
+
+}
+.pn1{
+    display: flex;
+ 
+    height: 10vh;
+    width: 4vw;
+    font-family:"Thasadith", serif   ;
+    font-weight: 900;
+    
+    
+}
+.pd1{
+    display: flex;
+    
+    height: 10vh;
+    width: 4vw;
+    color: black;
+    font-size: x-large;
+    font-family:"Thasadith", serif   ;
+    font-weight: 900;
+}
+.pn2{
+    
+    font-family:"Thasadith", serif   ;
+    font-weight: 900;
+    display: flex;
+    height: 10vh;
+    width: 4vw;
+}
+.pd2{
+    display: flex;
+    height: 10vh;
+    width: 4vw;
+    font-size: x-large;
+    font-family:"Thasadith", serif   ;
+    font-weight: 900;
+}
+.br{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid ;
+    border-radius: 10px;
+}
+
+/* .reset2 {
+    position: absolute;
+    align-self: baseline;
+    
+}  */
+
+
+@media screen and (max-width: 889px) {
+    body {
+        position: relative;
+        background-color: rgb(255, 255, 255);
+        flex-direction: column;
+    }
+
+    .gameContainer{
+        position: absolute;
+        flex-direction: row;
+        
+    }
+    /* .count{
+        align-self: last baseline;
+    } */
+
+   
+
+}
