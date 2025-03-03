@@ -21,12 +21,7 @@ body{
     flex-wrap: nowrap;
 }
 
-@media screen and (max-width: 300px) {
-    body {
-      background-image: url(bgms2.jpg);
-      object-fit: contain;
-    }
-}
+
 nav {
     display: flex;
     position: relative;
@@ -238,8 +233,8 @@ nav ul {
 .pn1{
     display: flex;
  
-    height: 10vh;
-    width: 4vw;
+    height: 52%;
+    width: 100%;
     font-family:"Thasadith", serif   ;
     font-weight: 900;
     
@@ -248,8 +243,8 @@ nav ul {
 .pd1{
     display: flex;
     
-    height: 10vh;
-    width: 4vw;
+    height: 52%;
+    width: 100%;
     color: black;
     font-size: x-large;
     font-family:"Thasadith", serif   ;
@@ -260,13 +255,13 @@ nav ul {
     font-family:"Thasadith", serif   ;
     font-weight: 900;
     display: flex;
-    height: 10vh;
-    width: 4vw;
+    height: 52%;
+    width: 100%;
 }
 .pd2{
     display: flex;
-    height: 10vh;
-    width: 4vw;
+    height: 52%;
+    width: 100%;
     font-size: x-large;
     font-family:"Thasadith", serif   ;
     font-weight: 900;
@@ -279,28 +274,21 @@ nav ul {
     border-radius: 10px;
 }
 
-/* .reset2 {
-    position: absolute;
+.reset2 {
+    /* position: absolute; */
     align-self: baseline;
     
-}  */
+} 
 
 
-@media screen and (max-width: 889px) {
+@media screen and (max-width: 2500px) {
     body {
         position: relative;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(243, 245, 255);
         flex-direction: column;
     }
 
-    .gameContainer{
-        position: absolute;
-        flex-direction: row;
-        
-    }
-    /* .count{
-        align-self: last baseline;
-    } */
+  
 
    
 
